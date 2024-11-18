@@ -17,6 +17,25 @@ AdaGL is an advanced deep learning optimizer that integrates fractional-order ca
 
 -------------------------------------------
 
+### How to use the custom Loss Function for AdaGL
+
+```
+model = torch.nn.Linear(10, 1)
+optimizer = AdaGL(model.parameters(), lr=0.001, alpha=1.5)
+criterion = FractionalSmoothLoss(base_loss='mse', alpha=1.5, smooth_coeff=0.01)
+
+# Training loop
+for epoch in range(100):
+    for inputs, targets in dataloader:
+        optimizer.zero_grad()
+        outputs = model(inputs)
+        loss = criterion(outputs, targets, model)
+        loss.backward()
+        optimizer.step()
+
+```
+
+
 ### Usage Example for Image Classification (CNNs)
 ```
 import torch
