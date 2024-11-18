@@ -1,7 +1,8 @@
 # AdaGL Optimization Algorthim for PyTorch
 AdaGL is an advanced deep learning optimizer that integrates fractional-order calculus with adaptive learning techniques. Leveraging the Grünwald–Letnikov (G–L) fractional-order derivative, AdaGL captures both long-term gradient trends and short-term variations, enhancing optimization across diverse tasks. It dynamically adjusts learning rates using a step size control coefficient, enabling faster convergence and better generalization. Designed to overcome limitations of traditional optimizers like Adam and SGD, AdaGL excels in avoiding local minima and saddle points while targeting flat minima for robust performance. Tested on tasks like image classification, graph analysis, and language modeling, it achieves higher accuracy and efficiency across deep learning domains.
 
-<strong>The math formula for the AdaGL Algorthim was adapted for PyTorch from this published paper <em>[here](https://link.springer.com/article/10.1007/s11063-024-11571-7)</em>.</strong> <br/><em>*Any addtions or corrections are welcome in the form of PR's.</em>
+<strong>The math formula for the AdaGL Algorthim was adapted for PyTorch from this published paper <em>[here](https://link.springer.com/article/10.1007/s11063-024-11571-7)</em>.</strong> 
+<br/><em>*Any addtions or corrections are welcome in the form of PR's.</em>
 
 -----------------------------------------
 
