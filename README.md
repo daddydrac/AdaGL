@@ -150,7 +150,7 @@ for epoch in range(100):
 
 ```
 
-### Language Modeling (LTSM)
+### Language Modeling (LSTM)
 ```
 import torch
 import torch.nn as nn
