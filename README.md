@@ -20,10 +20,10 @@ AdaGL is an advanced deep learning optimizer that integrates fractional-order ca
 ### How to use the custom Fractional Loss Function for AdaGL
 This loss combines the primary task's loss (e.g., MSE, Cross-Entropy) with a gradient regularization term to penalize sharp changes in the loss surface. It also incorporates fractional-order smoothing for improved optimization. You are still free to use standard loss functions as shown in examples below.
 
-<strong>Benefits</strong>
- - Alignment with AdaGL: By introducing fractional-order smoothing, the loss function complements AdaGL’s ability to leverage long-term gradient trends.
- - Avoiding Overfitting: Regularizing sharp gradient changes leads to flat minima, which generalize better.
- - Task Adaptability: Works with regression (MSE) and classification (Cross-Entropy), making it versatile.
+#### Benefits 
+ - <strong>Alignment with AdaGL:</strong> By introducing fractional-order smoothing, the loss function complements AdaGL’s ability to leverage long-term gradient trends.
+ - <strong>Avoiding Overfitting:</strong> Regularizing sharp gradient changes leads to flat minima, which generalize better.
+ - <strong>Task Adaptability:</strong> Works with regression (MSE) and classification (Cross-Entropy), making it versatile. 
 
 ```
 model = torch.nn.Linear(10, 1)
